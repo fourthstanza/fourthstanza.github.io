@@ -1,9 +1,9 @@
 {
-  "name": "first_app",
+  "name": "fourthstanza",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://fourthstanza.github.io/index.html/",
+  "homepage": "https://fourthstanza.github.io/fourthstanza.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
