@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://fourthstanza.github.io/fourthstanza.github.io/",
+  "homepage": "https://fourthstanza.github.io/github_page/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
