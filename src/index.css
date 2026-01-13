@@ -4,7 +4,9 @@
     --color-background-top: #FFBB8A;
     --color-background-bottom: #1A1816;
     --color-background-middle: #FFDDC4;
-    --color-background-gray: #8C8987;
+
+    --color-surface-gray: #444444;
+
     --color-text: #333333;
     --color-hover: #FF852E;
     --color-foreground: #ffffff;
