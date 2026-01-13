@@ -3,6 +3,7 @@ import { About } from "./sections/about";
 import { Projects } from "./sections/projects";
 import { Gallery } from "./sections/gallery";
 import { Contact } from "./sections/contact";
+import { Footer } from "./layout/footer";
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Gallery />
           <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
