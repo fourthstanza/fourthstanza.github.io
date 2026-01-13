@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+
+\title{Github Portfolio Website Development Log}
+\author{Matthew Sylvester}
+\date{January 2026 -- current}
+
+\begin{document}
+
+\maketitle
+
+\section{Scaffolding}
+
+React + vite with tailwindcss for styling. See tutorial on setup \& basic page structuring followed \href{https://www.youtube.com/watch?v=cIYdiRDFWQw}{here.}
+
+\subsection{React requirements}
+
+Installing requirements and setting up the React development workspace
+
+\begin{itemize}
+    \item \textbf{Node.js}; Javascript runtime. Installed from \href{https://nodejs.org/en/download}{https://nodejs.org/en/download}
+    \item \textbf{npm CLI}; package manager for Javascript, installed automatically with node.js but releases will not necessarily automatically update. 
+    \item \textbf{Vite}; build tool for web projects (web server \& build command which bundles code with Rollup). Installed through npm CLI. Documentation: \href{https://vite.dev/guide/}{https://vite.dev/guide/}
+\end{itemize}
+
+Using typescript as the default language for all pages, be aware that the tutorials I've followed are often for javascript/jsx so I may not be properly using typescript. default file extension is tsx unless required to be otherwise.\\
+
+
+Begin by installing the Node.js runtime. Make sure npm package manager is included in the installer. Once Node.js is installed, open a terminal in the workspace for the project in the code editor and run 
+
+\begin{verbatim}
+    npm create vite@latest my-app -- --template react
+\end{verbatim}
+
+Note that this command needs to be run only to set up vite and create the index.html file.\\
+
+For the website, the options selected were
+
+\begin{enumerate}
+    \item use rolldown-vite?: yes
+    \item hosted on \href{http://localhost:5173/}{http://localhost:5173/}
+\end{enumerate}
+
+use --host to expose.
+
+When opening the project for a development session, you will need to start the dev server with the following command:
+\begin{verbatim}
+    npm run dev
+\end{verbatim}
+
+\subsection{Styling}
+
+\href{https://lucide.dev/}{Lucide-react} is installed for icons.
+
+\section{Deployment}
+
+Deployed as a github pages page in \href{https://github.com/fourthstanza/fourthstanza.github.io}{this} repo using \href{https://vite.dev/guide/static-deploy.html}{this} workflow.
+
+\section{Structure}
+
+\subsection{Navigation bar}
+
+
+
+\subsection{Main pages}
+
+Site is separated into sections via the \textit{sections} folder. The sections are as follows.
+
+\begin{itemize}
+    \item \textbf{about}; the index and primary page. Contains information about me and a summary of my experience/projects
+    \item \textbf{projects}; summary of projects I'm currently working on. Contains additional project pages that go into further detail, links to other resources
+    \item \textbf{gallery}; gallery of pictures I've taken
+    \item \textbf{contact}; contact \& location information (pull template \& framework from somewhere?)
+\end{itemize}
+
+\end{document}
