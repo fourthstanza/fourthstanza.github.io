@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, Square } from "lucide-react";
-import Logo from "../assets/images/logo.jpg";
+import Logo from "../assets/images/logo.png";
 /*import { Button } from "../components/button";*/
 
 const navLinks = [
@@ -20,10 +20,12 @@ export const Navbar = () => {
 
 
     return <header className="fixed top-0 left-0 w-full z-50 bg-transparent py-5">
+        {/*mobile nav bar block*/}
+        <div className="md:hidden fixed inset-x-0 top-0 h-21 glass -z-10"/>
         <nav className="container mx-auto px-6 flex justify-between items-center">
             {/* Logo */}
-            <a href="#" className="flex gap-3 items-center text-2xl font-bold tracking-tight hover:text-hover hover:text-shadow-lg/15 text-shadow-background-top">
-                <img src={Logo} alt="Logo" className="w-12 h-12 rounded-full drop-shadow-md drop-shadow-surface-gray" /> Matthew Sylvester
+            <a href="#" className="flex gap-3 items-center text-4xl font-bold font-serif italic tracking-tight hover:text-hover hover:text-shadow-lg/15 text-shadow-background-top">
+                <img src={Logo} alt="Logo" className="w-12 h-12 rounded-full drop-shadow-md drop-shadow-surface-gray" />f (s)
             </a>
             {/* Desktop Nav */}
             <div className="hidden md:flex gap-1 items-center animate-fade-in">
@@ -36,7 +38,7 @@ export const Navbar = () => {
                 </div>
                 {/*en/fr button*/}
             </div>
-            {/* Mobile Nav*/}
+        {/* Mobile Nav*/}
             <button className="md:hidden p-2 white animate-fade-in"
                 onClick={() => {
                     if (isMobileMenuOpen) {

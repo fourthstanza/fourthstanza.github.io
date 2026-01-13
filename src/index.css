@@ -4,7 +4,7 @@
 
 @theme{
     --color-background-top: #4597cb;
-    --color-background-bottom: #0f2430;
+    --color-background-bottom: #071117;
     --color-background-middle: #325160;
 
     --color-surface-gray: #444444;
@@ -34,7 +34,6 @@
     .glass{
         background-color: color-mix(in srgb, var(--color-background-top) 50%, transparent);
         backdrop-filter: blur(16px);
-        border: 1px solid color-mix(in srgb, var(--color-background-middle) 50%, transparent);
     }
 }
 
