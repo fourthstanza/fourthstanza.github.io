@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1768337386 "c:/Users/Fourt/Desktop/Projects/React_App/github_page/fourthstanza.github.io/devlog/devlog.tex" "devlog.pdf" "devlog" 1768337386 0
-  "c:/Users/Fourt/Desktop/Projects/React_App/github_page/fourthstanza.github.io/devlog/devlog.tex" 1768337385 3507 8e5d7d354c47a2dd5530d43ab9a25f34 ""
+["pdflatex"] 1768345777 "c:/Users/Fourt/Desktop/Projects/React_App/github_page/fourthstanza.github.io/devlog/devlog.tex" "devlog.pdf" "devlog" 1768345778 0
+  "c:/Users/Fourt/Desktop/Projects/React_App/github_page/fourthstanza.github.io/devlog/devlog.tex" 1768345777 3599 f073061a6af67ce01886cec1a9995f5a ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1700210066 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1700211251 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1700210771 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -71,9 +71,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1700216301 4754190 e930cb192d271923aeac4effe1abd9bb ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1700216458 8213484 d3b0cbb962dc1cdc449d335034ad066e ""
   "c:/texlive/2023/texmf.cnf" 1700216271 713 e69b156964470283e0530f5060668171 ""
-  "devlog.aux" 1768337386 960 44670213b554721f7738ffda22c79121 "pdflatex"
-  "devlog.out" 1768337386 761 d6f4ea8ec486984c0932d90c7ef6f168 "pdflatex"
-  "devlog.tex" 1768337385 3507 8e5d7d354c47a2dd5530d43ab9a25f34 ""
+  "devlog.aux" 1768345778 1073 ce8ef32fdd23986cec462598c7df2901 "pdflatex"
+  "devlog.out" 1768345778 848 f59ae067dd7dcf13806dc9fe07d0ceca "pdflatex"
+  "devlog.tex" 1768345777 3599 f073061a6af67ce01886cec1a9995f5a ""
   (generated)
   "devlog.aux"
   "devlog.log"
