@@ -1,4 +1,3 @@
-import { Hero } from "./sections/hero";
 import { Navbar } from "./layout/navbar";
 import { About } from "./sections/about";
 import { Projects } from "./sections/projects";
@@ -12,10 +11,9 @@ function App() {
 
   return (
     /*html goes here*/
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen overflow-x-hidden text-text">
       <Navbar />
       <main>
-          <Hero />
           <About />
           <Projects />
           <Gallery />

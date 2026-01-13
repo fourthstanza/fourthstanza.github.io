@@ -1,4 +1,5 @@
-import { Menu } from "lucide-react";
+import { useState } from "react";
+import { Menu, Square } from "lucide-react";
 import Logo from "../assets/images/logo.jpg";
 /*import { Button } from "../components/button";*/
 
@@ -10,6 +11,14 @@ const navLinks = [
 ]
 
 export const Navbar = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isClosing, setIsClosing] = useState(false);
+
+    const startClose = () => {
+        setIsClosing(true);
+    }
+
+
     return <header className="fixed top-0 left-0 w-full z-50 bg-transparent py-5">
         <nav className="container mx-auto px-6 flex justify-between items-center">
             {/* Logo */}
@@ -17,7 +26,7 @@ export const Navbar = () => {
                 <img src={Logo} alt="Logo" className="w-12 h-12 rounded-full drop-shadow-md drop-shadow-surface-gray" /> Matthew Sylvester
             </a>
             {/* Desktop Nav */}
-            <div className="hidden md:flex gap-1 items-center">
+            <div className="hidden md:flex gap-1 items-center animate-fade-in">
                 <div className="glass rounded-full px-2 py-1 flex gap-4">
                 {navLinks.map((link, index) => (
                     <a key={index} href={link.href} className="px-4 py-2 hover:text-hover">
@@ -25,22 +34,42 @@ export const Navbar = () => {
                     </a>
                 ))}
                 </div>
+                {/*en/fr button*/}
             </div>
             {/* Mobile Nav*/}
-            <button className="md:hidden p-2 white">
-                <Menu size={24}/>
+            <button className="md:hidden p-2 white animate-fade-in"
+                onClick={() => {
+                    if (isMobileMenuOpen) {
+                        startClose();
+                    } else {
+                        setIsMobileMenuOpen(true);
+                    }
+                }}>
+                {isMobileMenuOpen ? <Square size={24}/> : <Menu size={24}/>}
             </button>
         </nav>
 
         {/* Mobile Menu*/}
-        <div className="md:hidden glass my-4">
+        {(isMobileMenuOpen || isClosing) && (
+        <div className={`md:hidden glass my-4 ${isClosing ? "animate-fade-out" : "animate-fade-in"}`}
+            onAnimationEnd={() => {
+                if (isClosing) {
+                    setIsClosing(false);
+                    setIsMobileMenuOpen(false);
+                }
+            }}>
             <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                 {navLinks.map((link, index) => (
-                    <a key={index} href={link.href} className="px-4 py-2 hover:text-hover text-lg">
+                    <a  key={index}
+                        href={link.href} 
+                        className="px-4 py-1 hover:text-hover text-lg"
+                        onClick={() => startClose()}
+                    >
                         {link.label}
                     </a>
                 ))}
             </div>
         </div>
-    </header>;
+        )}
+    </header>;  
 };

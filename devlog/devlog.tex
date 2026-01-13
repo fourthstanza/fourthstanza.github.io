@@ -55,13 +55,17 @@ When opening the project for a development session, you will need to start the d
 
 \section{Deployment}
 
-Deployed as a github pages page in \href{https://github.com/fourthstanza/fourthstanza.github.io}{this} repo using \href{https://vite.dev/guide/static-deploy.html}{this} workflow.
+Deployed as a github pages page in \href{https://github.com/fourthstanza/fourthstanza.github.io}{fourthstanza.github.io} repo using \href{https://vite.dev/guide/static-deploy.html}{default vite github pages workflow}.
 
 \section{Structure}
 
 \subsection{Navigation bar}
 
+Separated into its own component in \textit{layout/navbar.tsx} for reusability across pages. Contains links to main sections of the site.\\
 
+Has split styling for desktop and mobile views. Mobile view is a hamburger menu that expands to show links when clicked. See use of md: for handling switching between desktop and mobile views.\\
+
+Animated with CSS styling for fade-in and fade-out when opening and closing the mobile menu. See utilities layer.
 
 \subsection{Main pages}
 
