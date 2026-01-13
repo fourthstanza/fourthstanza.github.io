@@ -17,7 +17,7 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 md:justify-items-center">
                     {/* About */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4 text-text">Blurb</h3>
+                        <h3 className="text-lg font-bold mb-4 text-text">In brief</h3>
                         <p className="text-text/70 text-sm italic">
                             This webpage is a work in progress, expect some functionality to be missing. Designed & developed by hand. All images and content © Matthew Sylvester unless otherwise specified. Powered by React+Vite and Tailwindcss.
                         </p>
