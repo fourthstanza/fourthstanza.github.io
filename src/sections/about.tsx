@@ -15,7 +15,7 @@ export const About = () => {
                         <img src={aboutImage} alt="About Image" className="w-full h-auto drop-shadow-2xl drop-shadow-footer-background hover:drop-shadow-2xl hover:drop-shadow-background-middle/30" />
                     </div>
                     {/*text*/}
-                    <div className="px-4 py-10">
+                    <div className="md:px-4 py-10">
                         <h2 className="text-4xl font-bold mb-4 text-text">Welcome to my page.</h2>
                         <p className="mb-4 md:text-xl font-medium text-text">
                             Hello! My name's Matthew. I'm a passionate new research assistant/software engineer with a background in astrophysics and computer science. I specialize in modelling dynamical systems and the practical application of artificial intelligence.

@@ -55,7 +55,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu*/}
         {(isMobileMenuOpen || isClosing) && (
-        <div className={`md:hidden glass my-4 ${isClosing ? "animate-fade-out" : "animate-fade-in"}`}
+        <div className={`md:hidden glass my-4 outline-2 outline-white/60 ${isClosing ? "animate-fade-out" : "animate-fade-in"}`}
             onAnimationEnd={() => {
                 if (isClosing) {
                     setIsClosing(false);
