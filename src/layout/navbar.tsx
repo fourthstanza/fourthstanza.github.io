@@ -22,16 +22,18 @@ export const Navbar = () => {
     return <header className="fixed top-0 left-0 w-full z-50 bg-transparent py-5">
         {/*mobile nav bar block*/}
         <div className="md:hidden fixed inset-x-0 top-0 h-21 glass -z-10"/>
+        {/*desktop nav bar block*/}
+        <div className="hidden md:flex fixed inset-x-0 top-0 h-22 -z-10 bg-linear-to-b from-background-bottom to-background-bottom/0"/>
         <nav className="container mx-auto px-6 flex justify-between items-center">
             {/* Logo */}
             <a href="#" className="flex gap-3 items-center text-4xl font-bold font-serif italic tracking-tight hover:text-hover hover:text-shadow-lg/15 text-shadow-background-top">
                 <img src={Logo} alt="Logo" className="w-12 h-12 rounded-full drop-shadow-md drop-shadow-surface-gray" />f (s)
             </a>
             {/* Desktop Nav */}
-            <div className="hidden md:flex gap-1 items-center animate-fade-in">
-                <div className="glass rounded-full px-2 py-1 flex gap-4">
+            <div className="hidden md:flex gap-1 glass items-center animate-fade-in rounded-full outline-text/40 outline-1 ">
+                <div className="px-2 py-1 flex gap-4">
                 {navLinks.map((link, index) => (
-                    <a key={index} href={link.href} className="px-4 py-2 hover:text-hover">
+                    <a key={index} href={link.href} className="px-4 py-2 hover:text-hover font-bold lg:text-lg">
                         {link.label}
                     </a>
                 ))}

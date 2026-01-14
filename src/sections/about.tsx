@@ -12,13 +12,13 @@ export const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-5 py-5 items-center">
                     {/*image*/}
                     <div>
-                        <img src={aboutImage} alt="About Image" className="w-full h-auto shadow-xl" />
+                        <img src={aboutImage} alt="About Image" className="w-full h-auto drop-shadow-2xl drop-shadow-footer-background hover:drop-shadow-2xl hover:drop-shadow-background-middle/30" />
                     </div>
                     {/*text*/}
-                    <div className="px-4">
+                    <div className="px-4 py-10">
                         <h2 className="text-4xl font-bold mb-4 text-text">Welcome to my page.</h2>
                         <p className="mb-4 md:text-xl font-medium text-text">
-                            Hello! I'm Matthew Sylvester, a passionate new researcher/software engineer with a background in astrophysics and computer science. I specialize in modelling dynamical systems and the practical application of artificial intelligence.
+                            Hello! My name's Matthew. I'm a passionate new research assistant/software engineer with a background in astrophysics and computer science. I specialize in modelling dynamical systems and the practical application of artificial intelligence.
                             I'm a strong advocate for doing things yourself and continuously learning new skills.
                         </p>
                         <p className="mb-4 md:text-xl font-medium text-text">

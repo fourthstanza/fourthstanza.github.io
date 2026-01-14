@@ -11,7 +11,7 @@
     --color-surface-gray: #444444;
 
     --color-text: #e3eeeb;
-    --color-hover: #46927d;
+    --color-hover: #48c792;
     --color-foreground: #ffffff;
     --color-polaroid-blue: #4597cb;
 
@@ -35,6 +35,8 @@
     .glass{
         background-color: color-mix(in srgb, var(--color-background-top) 50%, transparent);
         backdrop-filter: blur(16px);
+        position:relative;
+        z-index:10
     }
 }
 
