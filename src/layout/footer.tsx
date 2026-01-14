@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 
 // filepath: c:\Users\Fourt\Desktop\Projects\React_App\github_page\fourthstanza.github.io\src\layout\footer.tsx
 
@@ -8,6 +8,7 @@ export const Footer = () => {
     const socialLinks = [
         { icon: Github, href: "https://github.com/fourthstanza", label: "GitHub" },
         { icon: Linkedin, href: "https://www.linkedin.com/in/fourthstanza/", label: "LinkedIn" },
+        { icon: Instagram, href: "https://www.instagram.com/fourthstanza/", label: "Instagram" },
         { icon: Mail, href: "mailto:fourthstanza@gmail.com", label: "Email" },
     ];
 
