@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, Square } from "lucide-react";
 import Logo from "../assets/images/logo.png";
-/*import { Button } from "../components/button";*/
+import { Button } from "../components/button";
 
 const navLinks = [
     { label: "About", href: "#about" },
@@ -39,6 +39,9 @@ export const Navbar = () => {
                 ))}
                 </div>
                 {/*en/fr button*/}
+                <Button className="mr-2 px-4 py-2 text-sm font-extralight">
+                    EN/FR
+                </Button>
             </div>
         {/* Mobile Nav*/}
             <button className="md:hidden p-2 white animate-fade-in"
@@ -73,6 +76,9 @@ export const Navbar = () => {
                     </a>
                 ))}
             </div>
+            <Button className="mt-0 px-4 mb-4 mx-7 text-sm font-extralight">
+                EN/FR
+            </Button>
         </div>
         )}
     </header>;  
