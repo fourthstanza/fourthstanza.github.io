@@ -1,6 +1,6 @@
-import aboutImage from "../assets/images/about_image.jpg";
+import aboutImage from "@/assets/images/about_image.jpg";
 
-export const About = () => {
+export const AboutFR = () => {
     return (
     <section className="min-h-screen items-center overflow-hidden py-20">
         {/*background*/}
