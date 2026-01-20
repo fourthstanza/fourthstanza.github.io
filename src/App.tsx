@@ -5,10 +5,10 @@ import { Gallery } from "@/sections/sectionsEN/gallery";
 import { Contact } from "@/sections/sectionsEN/contact";
 import { Footer } from "@/layout/footer";
 
-import {AboutFR} from "@/sections/sectionsFR/aboutFR";
+/*import {AboutFR} from "@/sections/sectionsFR/aboutFR";
 import {ProjectsFR} from "@/sections/sectionsFR/projectsFR";
 import {GalleryFR} from "@/sections/sectionsFR/galleryFR";
-import {ContactFR} from "@/sections/sectionsFR/contactFR";
+import {ContactFR} from "@/sections/sectionsFR/contactFR";8?*/
 
 
 function App() {
