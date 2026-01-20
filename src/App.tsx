@@ -1,9 +1,9 @@
-import { Navbar } from "@/layout/navbar";
-import { About } from "@/sections/sectionsEN/about";
-import { Projects } from "@/sections/sectionsEN/projects";
-import { Gallery } from "@/sections/sectionsEN/gallery";
-import { Contact } from "@/sections/sectionsEN/contact";
-import { Footer } from "@/layout/footer";
+import { Navbar } from "./layout/navbar";
+import { About } from "./sections/sectionsEN/about";
+import { Projects } from "./sections/sectionsEN/projects";
+import { Gallery } from "./sections/sectionsEN/gallery";
+import { Contact } from "./sections/sectionsEN/contact";
+import { Footer } from "./layout/footer";
 
 /*import {AboutFR} from "@/sections/sectionsFR/aboutFR";
 import {ProjectsFR} from "@/sections/sectionsFR/projectsFR";
