@@ -4,10 +4,10 @@ import Logo from "../assets/images/logo.png";
 import { Button } from "../components/button";
 
 const navLinks = [
-    { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "/#/about" },
+    { label: "Projects", href: "/#/projects" },
+    { label: "Gallery", href: "/#/gallery" },
+    { label: "Contact", href: "/#/contact" },
 ]
 
 export const Navbar = () => {

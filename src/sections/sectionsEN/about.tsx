@@ -2,7 +2,7 @@ import aboutImage from "@/assets/images/about_image.jpg";
 
 export const About = () => {
     return (
-    <article className="h-auto relative">
+    <article className="h-auto relative min-h-screen">
         {/*background images*/}
         <img src="/glass_blur_grain.png" className="min-h-screen absolute w-full inset-0 -z-10 object-cover opacity-80 mask-b-from-50% mask-b-to-100%"/>
         <img src="/glass_blur_grain.png" className="min-h-screen absolute bottom-0 w-full -z-10 object-cover opacity-80 mask-b-from-50% mask-b-to-100% rotate-180"/>

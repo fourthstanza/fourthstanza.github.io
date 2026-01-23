@@ -1,3 +1,4 @@
+import {Route, HashRouter as Router, Routes} from "react-router";
 import { Navbar } from "./layout/navbar";
 import { About } from "./sections/sectionsEN/about";
 import { Projects } from "./sections/sectionsEN/projects";
@@ -16,16 +17,21 @@ function App() {
 
   return (
     /*html goes here*/
+    <Router>
     <div className="min-h-screen overflow-x-hidden text-text">
       <Navbar />
       <main>
-          <About />
-          <Projects />
-          <Gallery />
-          <Contact />
+        <Routes>
+          <Route index element={<About />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
       </main>
       <Footer />
     </div>
+    </Router>
   );
 }
 
