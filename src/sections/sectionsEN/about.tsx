@@ -6,9 +6,10 @@ export const About = () => {
         {/*background images*/}
         <img src="/glass_blur_grain.png" className="min-h-screen absolute w-full inset-0 -z-10 object-cover opacity-80 mask-b-from-50% mask-b-to-100%"/>
         <img src="/glass_blur_grain.png" className="min-h-screen absolute bottom-0 w-full -z-10 object-cover opacity-80 mask-b-from-50% mask-b-to-100% rotate-180"/>
+        {/*Content*/}
+        {/*About section*/}
         <section className="items-center overflow-hidden py-20">
-            <div className="relative flex items-center mt-25 mx-5 rounded-3xl">
-                {/*Content?*/}
+            <div className="relative flex items-center mt-25 mx-5">
                 <div className="mx-auto max-w-7xl px-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-5 py-5 items-center">
                         {/*image*/}
@@ -31,6 +32,7 @@ export const About = () => {
                 </div>
             </div>
         </section>
+        {/*Spotify embeds section*/}
         <section className="items-center overflow-hidden">
             <div className="mx-auto max-w-7xl px-6">
                 <h2 className="md:text-4xl text-2xl font-bold mb-15 text-text justify-center flex">

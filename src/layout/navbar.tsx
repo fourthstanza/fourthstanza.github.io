@@ -2,22 +2,41 @@ import { useState } from "react";
 import { Menu, Square } from "lucide-react";
 import Logo from "../assets/images/logo.png";
 import { Button } from "../components/button";
+import { useLocation, useNavigate } from "react-router";
 
 const navLinks = [
-    { label: "About", href: "/#/about" },
-    { label: "Projects", href: "/#/projects" },
-    { label: "Gallery", href: "/#/gallery" },
-    { label: "Contact", href: "/#/contact" },
+    { label: "About", href: "about" },
+    { label: "Projects", href: "projects" },
+    { label: "Gallery", href: "gallery" },
+    { label: "Contact", href: "contact" },
 ]
 
 export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
+    
+    const [frIsToggled, setFrIsToggled] = useState(false);
+    const langprefix = frIsToggled ? "/#/fr" : "/#/en";
+    const location = useLocation();
+    const navigate = useNavigate();
+    const currentPath = location.pathname;
+    const toggleLanguage = () => {
+        const newLang = frIsToggled ? "en" : "fr";
+
+        const segments = currentPath.split("/").filter(Boolean);
+        if (segments.length > 0 && (segments[0] === "en" || segments[0] === "fr")) {
+            segments[0] = newLang;
+        } else {
+            segments.unshift(newLang);
+        }
+
+        navigate("/" + segments.join("/"));
+        setFrIsToggled(!frIsToggled);
+    }
 
     const startClose = () => {
         setIsClosing(true);
     }
-
 
     return <header className="fixed top-0 left-0 w-full z-50 bg-transparent py-5">
         {/*mobile nav bar block*/}
@@ -33,13 +52,15 @@ export const Navbar = () => {
             <div className="hidden md:flex gap-1 glass items-center animate-fade-in rounded-full outline-text/40 outline-1 ">
                 <div className="px-2 py-1 flex gap-4">
                 {navLinks.map((link, index) => (
-                    <a key={index} href={link.href} className="px-4 py-2 hover:text-hover font-bold lg:text-lg">
+                    <a key={index} href={`${langprefix}/${link.href}`} className="px-4 py-2 hover:text-hover font-bold lg:text-lg">
                         {link.label}
                     </a>
                 ))}
                 </div>
                 {/*en/fr button*/}
-                <Button className="mr-2 px-4 py-2 text-sm font-extralight">
+                <Button className="mr-2 px-4 py-2 text-sm font-extralight"
+                    onClick={toggleLanguage}
+                >
                     EN/FR
                 </Button>
             </div>
@@ -76,7 +97,9 @@ export const Navbar = () => {
                     </a>
                 ))}
             </div>
-            <Button className="mt-0 px-4 mb-4 mx-7 text-sm font-extralight">
+            <Button className="mt-0 px-4 mb-4 mx-7 text-sm font-extralight"
+                onClick={toggleLanguage}
+            >
                 EN/FR
             </Button>
         </div>
