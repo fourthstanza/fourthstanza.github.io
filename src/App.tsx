@@ -6,10 +6,10 @@ import { Projects } from "./sections/sectionsEN/projects";
 import { Gallery } from "./sections/sectionsEN/gallery";
 import { Contact } from "./sections/sectionsEN/contact";
 import { NotFound } from "./sections/sectionsEN/notFound";
-import {AboutFR} from "./sections/sectionsFR/aboutFR";
-import {ProjectsFR} from "./sections/sectionsFR/projectsFR";
-import {GalleryFR} from "./sections/sectionsFR/galleryFR";
-import {ContactFR} from "./sections/sectionsFR/contactFR";
+import { AboutFR } from "./sections/sectionsFR/aboutFR";
+import { ProjectsFR } from "./sections/sectionsFR/projectsFR";
+import { GalleryFR } from "./sections/sectionsFR/galleryFR";
+import { ContactFR } from "./sections/sectionsFR/contactFR";
 
 function App() {
   /*javascript logic goes here*/

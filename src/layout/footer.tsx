@@ -1,10 +1,9 @@
 import { Github, Linkedin, Mail, Instagram } from "lucide-react";
-
-// filepath: c:\Users\Fourt\Desktop\Projects\React_App\github_page\fourthstanza.github.io\src\layout\footer.tsx
+import { useCurrentLanguage } from "../components/useCurrentLanguage";
 
 export const Footer = () => {
-    const currentYear = new Date().getFullYear();
-    
+    const lang = useCurrentLanguage();
+
     const socialLinks = [
         { icon: Github, href: "https://github.com/fourthstanza", label: "GitHub" },
         { icon: Linkedin, href: "https://www.linkedin.com/in/fourthstanza/", label: "LinkedIn" },
@@ -18,9 +17,9 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 md:justify-items-center">
                     {/* About */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4 text-text">In brief</h3>
+                        <h3 className="text-lg font-bold mb-4 text-text">{lang === "fr" ? "En bref" : "In brief"}</h3>
                         <p className="text-text/70 text-sm italic">
-                            This webpage is a work in progress, expect some functionality to be missing. Designed & developed by hand. All images and content © Matthew Sylvester unless otherwise specified. Powered by React+Vite and Tailwindcss.
+                            {lang === "fr" ? "Cette page web est en cours de développement, donc certaines fonctionnalités sont manquantes. Conçue et développée à la main. Propulsée par React+Vite et Tailwindcss." : "This webpage is a work in progress, expect some functionality to be missing. Designed & developed by hand. Powered by React+Vite and Tailwindcss."}
                         </p>
                     </div>
 
@@ -28,16 +27,16 @@ export const Footer = () => {
                     <div>
                         <h3 className="text-lg font-bold mb-4 text-text">Navigation</h3>
                         <ul className="space-y-2">
-                            <li><a href="#about" className="text-text/70 hover:text-hover text-sm">About</a></li>
-                            <li><a href="#projects" className="text-text/70 hover:text-hover text-sm">Projects</a></li>
-                            <li><a href="#gallery" className="text-text/70 hover:text-hover text-sm">Gallery</a></li>
-                            <li><a href="#contact" className="text-text/70 hover:text-hover text-sm">Contact</a></li>
+                            <li><a href="#about" className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "À propos" : "About"}</a></li>
+                            <li><a href="#projects" className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "Projets" : "Projects"}</a></li>
+                            <li><a href="#gallery" className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "Galerie" : "Gallery"}</a></li>
+                            <li><a href="#contact" className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "Contact" : "Contact"}</a></li>
                         </ul>
                     </div>
 
                     {/* Social Links */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4 text-text">Connect</h3>
+                        <h3 className="text-lg font-bold mb-4 text-text">{lang === "fr" ? "Connectez" : "Connect"}</h3>
                         <div className="flex gap-4">
                             {socialLinks.map((link, index) => {
                                 const Icon = link.icon;
@@ -61,7 +60,7 @@ export const Footer = () => {
                 {/* Divider */}
                 <div className="border-t border-surface-gray/20 pt-8">
                     <p className="text-center text-text/50 text-sm">
-                        © {currentYear} Matthew Sylvester. All rights reserved.
+                        {lang === "fr" ? "© 2026 Matthew Sylvester. Tous droits réservés." : "© 2026 Matthew Sylvester. All rights reserved."}
                     </p>
                 </div>
             </div>

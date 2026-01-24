@@ -3,15 +3,17 @@ import { Menu, Square } from "lucide-react";
 import Logo from "../assets/images/logo.png";
 import { Button } from "../components/button";
 import { useLocation, useNavigate } from "react-router";
-
-const navLinks = [
-    { label: "About", href: "about" },
-    { label: "Projects", href: "projects" },
-    { label: "Gallery", href: "gallery" },
-    { label: "Contact", href: "contact" },
-]
+import { useCurrentLanguage } from "../components/useCurrentLanguage";
 
 export const Navbar = () => {
+    const lang = useCurrentLanguage();
+    const navLinks = [
+    { label: lang === "fr" ? "À propos" : "About", href: "about" },
+    { label: lang === "fr" ? "Projets" : "Projects", href: "projects" },
+    { label: lang === "fr" ? "Galerie" : "Gallery", href: "gallery" },
+    { label: lang === "fr" ? "Contact" : "Contact", href: "contact" },
+]
+
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
     
