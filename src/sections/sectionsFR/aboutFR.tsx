@@ -18,7 +18,7 @@ export const AboutFR = () => {
                         </div>
                         {/*text*/}
                         <div className="md:px-4 py-10">
-                            <h2 className="text-4xl font-bold mb-4 text-text">Welcome to my page.</h2>
+                            <h2 className="text-4xl font-bold mb-4 text-text">Bienvenue sur ma page.</h2>
                             <p className="mb-4 md:text-xl font-medium text-text">
                                 Bonjour! Je m'appelle Matthew. Je suis un jeune assistant de recherche/ingénieur logiciel passionné, avec une formation en astrophysique et en informatique. Je me spécialise dans la modélisation des systèmes dynamiques et l'application pratique de l'apprentissage automatique.
                                 Je crois fermement à l'importance de faire les choses soi-même et d'apprendre continuellement de nouvelles compétences.

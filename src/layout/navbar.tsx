@@ -30,6 +30,7 @@ export const Navbar = () => {
             segments[0] = newLang;
         } else {
             segments.unshift(newLang);
+            segments.push("about");
         }
 
         navigate("/" + segments.join("/"));
