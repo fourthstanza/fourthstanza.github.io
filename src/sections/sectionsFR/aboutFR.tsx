@@ -17,7 +17,7 @@ export const AboutFR = () => {
                             <img src={aboutImage} alt="About Image" className="w-full h-auto shadow-2xl shadow-footer-background" />
                         </div>
                         {/*text*/}
-                        <div className="md:px-4 py-10">
+                        <div className="md:px-4 py-10 animate-fade-in">
                             <h2 className="text-4xl font-bold mb-4 text-text">Bienvenue sur ma page.</h2>
                             <p className="mb-4 md:text-xl font-medium text-text">
                                 Bonjour! Je m'appelle Matthew. Je suis un jeune assistant de recherche/ingénieur logiciel passionné, avec une formation en astrophysique et en informatique. Je me spécialise dans la modélisation des systèmes dynamiques et l'application pratique de l'apprentissage automatique.
@@ -35,7 +35,7 @@ export const AboutFR = () => {
         {/*Spotify embeds section*/}
         <section className="items-center overflow-hidden">
             <div className="mx-auto max-w-7xl px-6">
-                <h2 className="md:text-4xl text-2xl font-bold mb-15 text-text justify-center flex">
+                <h2 className="md:text-4xl text-2xl font-bold mb-15 text-text justify-center flex animate-fade-in">
                     Ce que j'écoute en ce moment
                 </h2>
                 <div className="bg-text/20 rounded-3xl p-10 shadow-2xl shadow-footer-background mb-20">
