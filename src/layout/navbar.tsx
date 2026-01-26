@@ -94,7 +94,7 @@ export const Navbar = () => {
             <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                 {navLinks.map((link, index) => (
                     <a  key={index}
-                        href={link.href} 
+                        href={`${langprefix}/${link.href}`}
                         className="px-4 py-1 hover:text-hover text-lg"
                         onClick={() => startClose()}
                     >
