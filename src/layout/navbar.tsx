@@ -29,6 +29,8 @@ export const Navbar = () => {
         if (segments.length > 0 && (segments[0] === "en" || segments[0] === "fr")) {
             segments[0] = newLang;
         } else {
+            {/*default to about page if no language segment*/}
+            segments.length = 0;
             segments.unshift(newLang);
             segments.push("about");
         }
@@ -48,7 +50,7 @@ export const Navbar = () => {
         <div className="hidden md:flex fixed inset-x-0 top-0 h-22 -z-10 bg-linear-to-b from-background-bottom to-background-bottom/0"/>
         <nav className="container mx-auto px-6 flex justify-between items-center">
             {/* Logo */}
-            <a href="#" className="flex gap-3 items-center text-4xl font-bold font-serif italic tracking-tight hover:text-hover hover:text-shadow-lg/15 text-shadow-background-top">
+            <a href={lang === "fr" ? "/#/fr/about" : "/#/en/about"} className="flex gap-3 items-center text-4xl font-bold font-serif italic tracking-tight hover:text-hover hover:text-shadow-lg/15 text-shadow-background-top">
                 <img src={Logo} alt="Logo" className="w-12 h-12 rounded-full drop-shadow-md drop-shadow-surface-gray" />f (s)
             </a>
             {/* Desktop Nav */}
