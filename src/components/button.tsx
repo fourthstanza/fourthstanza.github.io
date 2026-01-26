@@ -1,6 +1,6 @@
 
 
-export const Button = ({className = "", size = "default", children, onClick}: {className?: string; size?: "sm" | "default" | "lg"; children: React.ReactNode; onClick?: React.MouseEventHandler<HTMLButtonElement>}) => {
+export const Button = ({className = "", size = "default", children, onClick, ...props}: React.ButtonHTMLAttributes<HTMLButtonElement> & {className?: string; size?: "sm" | "default" | "lg"; children: React.ReactNode; onClick?: React.MouseEventHandler<HTMLButtonElement>}) => {
     const baseClasses = "relative text-text overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 rounded-full bg-background-top hover:bg-background-top/90 shadow-md/20 shadow-background-top hover:text-hover";
 
     const sizeClasses = {
@@ -12,7 +12,7 @@ export const Button = ({className = "", size = "default", children, onClick}: {c
     const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
     return (
     <button onClick={onClick}
-     className={classes}>
+     className={classes} {...props}>
         <span className="relative flex items-center justify-center gap-2">
             {children}
             </span>

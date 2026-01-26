@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Instagram } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 import { useCurrentLanguage } from "../components/useCurrentLanguage";
 
 export const Footer = () => {
@@ -8,7 +8,6 @@ export const Footer = () => {
         { icon: Github, href: "https://github.com/fourthstanza", label: "GitHub" },
         { icon: Linkedin, href: "https://www.linkedin.com/in/fourthstanza/", label: "LinkedIn" },
         { icon: Instagram, href: "https://www.instagram.com/fourthstanza/", label: "Instagram" },
-        { icon: Mail, href: "mailto:fourthstanza@gmail.com", label: "Email" },
     ];
 
     return (
@@ -36,7 +35,7 @@ export const Footer = () => {
 
                     {/* Social Links */}
                     <div>
-                        <h3 className="text-lg font-bold mb-4 text-text">{lang === "fr" ? "Connectez" : "Connect"}</h3>
+                        <h3 className="text-lg font-bold mb-4 text-text">{lang === "fr" ? "Réseaux Sociaux" : "Socials"}</h3>
                         <div className="flex gap-4">
                             {socialLinks.map((link, index) => {
                                 const Icon = link.icon;
