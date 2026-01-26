@@ -17,7 +17,7 @@ export const About = () => {
                             <img src={aboutImage} alt="About Image" className="w-full h-auto shadow-2xl shadow-footer-background" />
                         </div>
                         {/*text*/}
-                        <div className="md:px-4 py-10">
+                        <div className="md:px-4 py-10 animate-fade-in">
                             <h2 className="text-4xl font-bold mb-4 text-text">Welcome to my page.</h2>
                             <p className="mb-4 md:text-xl font-medium text-text">
                                 Hello! My name's Matthew. I'm a passionate new research assistant/software engineer with a background in astrophysics and computer science. I specialize in modelling dynamical systems and the practical application of machine learning.
@@ -35,7 +35,7 @@ export const About = () => {
         {/*Spotify embeds section*/}
         <section className="items-center overflow-hidden">
             <div className="mx-auto max-w-7xl px-6">
-                <h2 className="md:text-4xl text-2xl font-bold mb-15 text-text justify-center flex">
+                <h2 className="md:text-4xl text-2xl font-bold mb-15 text-text justify-center flex animate-fade-in">
                     What I've been listening to
                 </h2>
                 <div className="bg-text/20 rounded-3xl p-10 shadow-2xl shadow-footer-background mb-20">
