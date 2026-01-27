@@ -68,7 +68,7 @@ Animated with CSS styling for fade-in and fade-out when opening and closing the 
 
 \subsection{EN/FR button}
 
-Manual implementation of language switching button in the navbar. Currently non-functional. Will be implemented by switching between two versions of each page.
+Manual implementation of language switching button in the navbar. Implemented by switching between two versions of each page. Static elements not handled by the router have built-in language switching by analyzing the URL and changing which text is displayed based on the language prefix.
 
 \subsection{Main pages}
 
@@ -87,6 +87,12 @@ Basic footer element contains blurb, duplicate nav, and social links.
 
 \section{Routing}
 
-Using HashRouter from react-router to handle routing between pages.
+Using HashRouter from react-router to handle routing between pages. Done because github pages do not support client-side routing without hashrouter.
+
+\section{Tools}
+
+Emails handled using email.js.\\
+installed through npm with npm i @emailjs/browser.\\
+Configured by adding keys to .env /(not pushed to the github repo/) which are imported and used when calling emailjs to send the email. Sends an email to my address using the template defined in the emailjs web interface and specified with an env variable.
 
 \end{document}
