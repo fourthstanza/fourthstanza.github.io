@@ -136,7 +136,7 @@ export const ContactFR = () => {
                             <textarea 
                                 id="message"
                                 required
-                                rows={5}
+                                rows={7}
                                 placeholder="Votre message..."
                                 value={formData.message}
                                 onChange={(e) =>
@@ -184,7 +184,7 @@ export const ContactFR = () => {
                     </div>
                     <div className="glass p-4 rounded-4xl outline-text/40 outline-1 animate-fade-in-3 md:w-xl w-80 shadow-xl shadow-footer-background m-5 mb-20">
                             <h3 className="text-xl text-center font-semibold mb-6">
-                                Contact Information
+                                Coordonnées
                             </h3>
                             <div className="space-y-4">
                                 {contactInfo.map((item, i) => (

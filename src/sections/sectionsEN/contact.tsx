@@ -95,7 +95,7 @@ export const Contact = () => {
                     <h1 className="text-center text-4xl font-bold text-text p-3">Let's Connect!</h1>
                     <p className="text-center text-lg font-medium text-text md:w-xl w-80">Interested in what I do and want to get in touch? Use the form below to send me a message and I'll get back to you.</p>
                 </div>
-                <div className="grid grid-cols-1 xl:grid-cols-2 mb-20">
+                <div className="grid grid-cols-1 xl:grid-cols-2">
                     <div className="glass p-4 rounded-4xl outline-text/40 outline-1 animate-fade-in-2 md:w-xl w-80 shadow-xl shadow-footer-background m-5">
                         <div className="grid grid-cols-1 md:grid-cols-[20%_80%] py-3">
                             <label 
@@ -136,7 +136,7 @@ export const Contact = () => {
                             <textarea 
                                 id="message"
                                 required
-                                rows={5}
+                                rows={7}
                                 placeholder="Your message here..."
                                 value={formData.message}
                                 onChange={(e) =>
