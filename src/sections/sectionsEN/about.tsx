@@ -14,10 +14,10 @@ export const About = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-5 py-5 items-center">
                         {/*image*/}
                         <div>
-                            <img src={aboutImage} alt="About Image" className="w-full h-auto shadow-2xl shadow-footer-background" />
+                            <img src={aboutImage} alt="About Image" className="w-full h-auto shadow-2xl shadow-footer-background animate-fade-in" />
                         </div>
                         {/*text*/}
-                        <div className="md:px-4 py-10 animate-fade-in">
+                        <div className="md:px-4 py-10 animate-fade-in-2">
                             <h2 className="text-4xl font-bold mb-4 text-text">Welcome to my page.</h2>
                             <p className="mb-4 md:text-xl font-medium text-text">
                                 Hello! My name's Matthew. I'm a passionate new research assistant/software engineer with a background in astrophysics and computer science. I specialize in modelling dynamical systems and the practical application of machine learning.
@@ -35,7 +35,7 @@ export const About = () => {
         {/*Spotify embeds section*/}
         <section className="items-center overflow-hidden">
             <div className="mx-auto max-w-7xl px-6">
-                <h2 className="md:text-4xl text-2xl font-bold mb-15 text-text justify-center flex animate-fade-in">
+                <h2 className="md:text-4xl text-2xl font-bold mb-15 text-text justify-center flex animate-fade-in-3">
                     What I've been listening to
                 </h2>
                 <div className="bg-text/20 rounded-3xl p-10 shadow-2xl shadow-footer-background mb-20">
