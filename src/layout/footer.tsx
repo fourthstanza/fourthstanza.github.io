@@ -25,11 +25,11 @@ export const Footer = () => {
                     {/* Quick Links */}
                     <div>
                         <h3 className="text-lg font-bold mb-4 text-text">Navigation</h3>
-                        <ul className="space-y-2">
-                            <li><a href={lang === "fr" ? "#/fr/about" : "#/en/about"} className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "À propos" : "About"}</a></li>
-                            <li><a href={lang === "fr" ? "#/fr/projects" : "#/en/projects"} className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "Projets" : "Projects"}</a></li>
-                            <li><a href={lang === "fr" ? "#/fr/gallery" : "#/en/gallery"} className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "Galerie" : "Gallery"}</a></li>
-                            <li><a href={lang === "fr" ? "#/fr/contact" : "#/en/contact"} className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "Contact" : "Contact"}</a></li>
+                        <ul className="space-y-2 grid grid-cols-2 gap-x-4">
+                            <li><a href={lang === "fr" ? "#/fr/about" : "#/en/about"} className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "● À propos" : "● About"}</a></li>
+                            <li><a href={lang === "fr" ? "#/fr/projects" : "#/en/projects"} className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "● Projets" : "● Projects"}</a></li>
+                            <li><a href={lang === "fr" ? "#/fr/gallery" : "#/en/gallery"} className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "● Galerie" : "● Gallery"}</a></li>
+                            <li><a href={lang === "fr" ? "#/fr/contact" : "#/en/contact"} className="text-text/70 hover:text-hover text-sm">{lang === "fr" ? "● Contact" : "● Contact"}</a></li>
                         </ul>
                     </div>
 
