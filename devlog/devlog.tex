@@ -68,7 +68,7 @@ Animated with CSS styling for fade-in and fade-out when opening and closing the 
 
 \subsection{EN/FR button}
 
-Manual implementation of language switching button in the navbar. Implemented by switching between two versions of each page. Static elements not handled by the router have built-in language switching by analyzing the URL and changing which text is displayed based on the language prefix.
+Manual implementation of language switching button in the navbar. Implemented by switching between two dictionaries (and sometimes directly as a single string switch) in each page. Static elements not handled by the router have built-in language switching by analyzing the URL and changing which text is displayed based on the language prefix.
 
 \subsection{Main pages}
 
@@ -80,6 +80,10 @@ Site is separated into sections via the \textit{sections} folder. The sections a
     \item \textbf{gallery}; gallery of pictures I've taken
     \item \textbf{contact}; contact \& location information (pull template \& framework from somewhere?)
 \end{itemize}
+
+\subsection{Subpages}
+
+Gallery and Projects pages set up with helper components to handle routing to subpages for each Projects and Gallery entry. Each individual gallery and project has its own page in the corresponding sections subfolder
 
 \subsection{Footer}
 
