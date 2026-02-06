@@ -2,8 +2,9 @@ import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-reac
 import { Button } from "../../components/button";
 import {useState} from "react"
 import emailjs from '@emailjs/browser'
+import { useParams } from "react-router"
 
-const contactInfo = [
+const contactInfoEN = [
     {
         icon: Mail,
         label: "Email",
@@ -22,12 +23,47 @@ const contactInfo = [
     }
 ];
 
+const contactInfoFR = [
+    {
+        icon: Mail,
+        label: "Courriel",
+        value: "fourthstanza@gmail.com"
+    },
+    {
+        icon: Phone,
+        label: "Téléphone",
+        value: "+1 (819) 993-8076",
+        href: "tel:+18199938076"
+    },
+    {
+        icon: MapPin,
+        label: "Location",
+        value: "Sherbrooke, QC, Canada"
+    }
+];
+
 type submitStatusType = {
     type: "success" | "error" | null;
     message: string;
 };
 
+const dictEN = {
+    title: "Let's Connect!",
+    subtitle: "Interested in what I do and want to get in touch? Use the form below to send me a message and I'll get back to you."
+}
+
+const dictFR = {
+    title: "Connectons!",
+    subtitle: "Vous êtes intéressé par mon travail et souhaitez me contacter? Utilisez le formulaire ci-dessous pour m'envoyer un message et je vous répondrai."
+}
+
 export const Contact = () => {
+
+    const lang = useParams().lang;
+    const contactInfo = lang === "fr" ? contactInfoFR : contactInfoEN
+
+    const dict = lang === "fr" ? dictFR : dictEN
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -64,20 +100,20 @@ export const Contact = () => {
 
             setSubmitStatus({
                 type: "success",
-                message: "Message sent successfully! I'll get back to you soon."
+                message: lang === "fr" ? "Message envoyé! Je vous répondrai bientôt." : "Message sent successfully! I'll get back to you soon."
             })
         } catch (error) {
     if (error instanceof Error) {
         console.error("EmailJS error:", error.message);
         setSubmitStatus({
             type: "error",
-            message: error.message || "Failed to send message. Please try again later.",
+            message: error.message || lang === "fr" ? "Impossible d'envoyer le message. Veuillez réessayer plus tard." : "Failed to send message. Please try again later.",
         });
     } else {
         console.error("Unknown error:", error);
         setSubmitStatus({
             type: "error",
-            message: "Failed to send message. Please try again later.",
+            message: lang === "fr" ? "Impossible d'envoyer le message. Veuillez réessayer plus tard." : "Failed to send message. Please try again later.",
             })
     }
         } finally {
@@ -92,8 +128,8 @@ export const Contact = () => {
         <form  onSubmit={handleSubmit} className="">
             <div className="flex flex-col items-center justify-center w-full min-h-screen">
                 <div className="m-30 mb-5 animate-fade-in">
-                    <h1 className="text-center text-4xl font-bold text-text p-3">Let's Connect!</h1>
-                    <p className="text-center text-lg font-medium text-text md:w-xl w-80">Interested in what I do and want to get in touch? Use the form below to send me a message and I'll get back to you.</p>
+                    <h1 className="text-center text-4xl font-bold text-text p-3">{dict.title}</h1>
+                    <p className="text-center text-lg font-medium text-text md:w-xl w-80">{dict.subtitle}</p>
                 </div>
                 <div className="grid grid-cols-1 xl:grid-cols-2">
                     <div className="glass p-4 rounded-4xl outline-text/40 outline-1 animate-fade-in-2 md:w-xl w-80 shadow-xl shadow-footer-background m-5">
@@ -101,7 +137,7 @@ export const Contact = () => {
                             <label 
                                 htmlFor="name" 
                                 className="align-middle font-medium py-2">
-                                    Name
+                                    {lang === "fr" ? "Nom" : "Name"}
                             </label>
                             <input 
                                 id="name" 
@@ -116,7 +152,7 @@ export const Contact = () => {
                             <label 
                                 htmlFor="email" 
                                 className="align-middle font-medium py-2">
-                                    Email
+                                    {lang === "fr" ? "Courriel" : "Email"}
                             </label>
                             <input
                                 type="email"
@@ -152,11 +188,11 @@ export const Contact = () => {
                             >
                                 {isLoading ? (
                                     <>
-                                    Sending...
+                                    {lang === "fr" ? "En cours..." : "Sending..." }
                                     </>
                                 ) : (
                                     <>
-                                    Send Message
+                                    {lang === "fr" ? "Envoyez" : "Send Message"}
                                     <Send className="w-5 h-5"/>
                                     </>
                                     )
@@ -184,7 +220,7 @@ export const Contact = () => {
                     </div>
                     <div className="glass p-4 rounded-4xl outline-text/40 outline-1 animate-fade-in-3 md:w-xl w-80 shadow-xl shadow-footer-background m-5 mb-20">
                             <h3 className="text-xl text-center font-semibold mb-6">
-                                Contact Information
+                                {lang === "fr" ? "Coordonnées" : "Contact Information" }
                             </h3>
                             <div className="space-y-4">
                                 {contactInfo.map((item, i) => (

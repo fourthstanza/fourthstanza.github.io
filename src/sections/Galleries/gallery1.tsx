@@ -1,11 +1,14 @@
 export const Gallery1 = () => {
     return (
-        <div className="min-h-screen">
-            gallery 1
-            <div>
-                the actual gallery page
+    <article className="h-auto relative min-h-screen">
+        {/*background image*/}
+        <img src="/glass_blur_grain.png" className="min-h-screen absolute w-full inset-0 -z-10 object-cover opacity-80 mask-b-from-50% mask-b-to-100%"/>
+        <section className="items-center overflow-hidden py-20">
+            <div className="relative flex items-center mt-25 mx-5">
+                <h1 className="">Gallery Page 1</h1>
             </div>
-        </div>
-    );
+        </section>
+    </article>
+    )
 }
 
