@@ -36,8 +36,13 @@ export const Gallery = () => {
         <img src="/glass_blur_grain.png" className="min-h-screen absolute w-full inset-0 -z-10 object-cover opacity-80 mask-b-from-50% mask-b-to-100%"/>
             <section className="items-center overflow-hidden py-30 flex justify-center">
                     <section className="items-center overflow-hidden">
+                        <div className="md:px-4 py-10 animate-fade-in flex justify-center">
+                            <h2 className="text-4xl font-bold mb-4 text-text">
+                                Image Gallery
+                            </h2>
+                        </div>
                     <div className="mx-auto px-6">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-10 py-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-10 py-10 animate-fade-in-2">
                             <div>
                                 <GalleryEntry
                                     images={Gal1Images}
