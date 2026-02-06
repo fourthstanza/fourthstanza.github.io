@@ -2,7 +2,7 @@ import { useParams } from "react-router"
 //import { Link } from "react-router"
 import { GalleryEntry } from "../../components/galleryEntry";
 import { Gal1Images } from "../Galleries/gal1Images";
-import { Gal2Images } from "../Galleries/gal2Images";
+import { Gal2Images } from "../Galleries/gal2images";
 
 const galleryTitlesEN = {
     gal1 : "Scenes from La Manche",
