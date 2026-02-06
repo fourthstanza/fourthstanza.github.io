@@ -1,5 +1,3 @@
-
-
 export const Button = ({className = "", size = "default", children, onClick, ...props}: React.ButtonHTMLAttributes<HTMLButtonElement> & {className?: string; size?: "sm" | "default" | "lg"; children: React.ReactNode; onClick?: React.MouseEventHandler<HTMLButtonElement>}) => {
     const baseClasses = "relative text-text overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 rounded-full bg-background-top hover:bg-background-top/90 shadow-md/20 shadow-background-top hover:text-hover";
 

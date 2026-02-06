@@ -1,8 +1,8 @@
 import { Github, Linkedin, Instagram } from "lucide-react";
-import { useCurrentLanguage } from "../components/useCurrentLanguage";
+import { useParams } from "react-router"
 
 export const Footer = () => {
-    const lang = useCurrentLanguage();
+    const lang = useParams().lang;
 
     const socialLinks = [
         { icon: Github, href: "https://github.com/fourthstanza", label: "GitHub" },

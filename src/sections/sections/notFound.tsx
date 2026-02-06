@@ -1,7 +1,7 @@
-import { useCurrentLanguage } from "../../components/useCurrentLanguage";
+import { useParams } from "react-router";
 
 export const NotFound = () => {
-    const lang = useCurrentLanguage();
+    const lang = useParams().lang;
     return (
     <article className="h-auto relative min-h-screen">
         {/*background image*/}

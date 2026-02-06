@@ -3,10 +3,10 @@ import { Menu, Square } from "lucide-react";
 import Logo from "../assets/images/logo.png";
 import { Button } from "../components/button";
 import { useLocation, useNavigate } from "react-router";
-import { useCurrentLanguage } from "../components/useCurrentLanguage";
+import { useParams } from "react-router"
 
 export const Navbar = () => {
-    const lang = useCurrentLanguage();
+    const lang = useParams().lang
     const navLinks = [
     { label: lang === "fr" ? "À propos" : "About", href: "about" },
     { label: lang === "fr" ? "Projets" : "Projects", href: "projects" },
