@@ -24,11 +24,20 @@ const galleryParagraphsFR = {
     gal2 : "Les premières images réalisées lors de mon initiation au développement et numérisation maison de films noir et blanc en 2024."
 }
 
+const dictFR = {
+    title : "Gallerie d'Images"
+}
+
+const dictEN = {
+    title : "Image Gallery"
+}
+
 export const Gallery = () => {
 
     const lang = useParams().lang;
     const galleryTitles = lang === "fr" ? galleryTitlesFR : galleryTitlesEN;
     const galleryParagraphs = lang === "fr" ? galleryParagraphsFR : galleryParagraphsEN;
+    const dict = lang === "fr" ? dictFR : dictEN
 
     return (
     <article className="h-auto relative min-h-screen">
@@ -38,7 +47,7 @@ export const Gallery = () => {
                     <section className="items-center overflow-hidden">
                         <div className="md:px-4 py-10 animate-fade-in flex justify-center">
                             <h2 className="text-4xl font-bold mb-4 text-text">
-                                Image Gallery
+                                {dict.title}
                             </h2>
                         </div>
                     <div className="mx-auto px-6">
