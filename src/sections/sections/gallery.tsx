@@ -11,7 +11,7 @@ const galleryTitlesEN = {
 
 const galleryParagraphsEN = {
     gal1 : "A series of photographs taken from La Manche national park in Newfoundland.",
-    gal2 : "The first set of images produced during my indroduction to home development and scanning of black and white film in 2024."
+    gal2 : "The first set of images produced during my introduction to home development and scanning of black and white film."
 }
 
 const galleryTitlesFR = {
@@ -20,8 +20,8 @@ const galleryTitlesFR = {
 }
 
 const galleryParagraphsFR = {
-    gal1 : "Une série de photographies prises dans le parc national de La Manche à Terre-Neuve.",
-    gal2 : "Les premières images réalisées lors de mon initiation au développement et numérisation maison de films noir et blanc en 2024."
+    gal1 : "Une série de photographes prises dans le parc national de La Manche à Terre-Neuve.",
+    gal2 : "Les premières images réalisées lors de mon initiation au développement et numérisation maison de films noir et blanc."
 }
 
 const dictFR = {
