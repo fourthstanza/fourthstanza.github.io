@@ -6,22 +6,22 @@ import { Gal2Images } from "../Galleries/gal2images";
 
 const galleryTitlesEN = {
     gal1 : "Scenes from La Manche",
-    gal2 : "Experiments in B&W Photography // 2024"
+    gal2 : "Experiments in B&W Photography"
 }
 
 const galleryParagraphsEN = {
     gal1 : "A series of photographs taken from La Manche national park in Newfoundland.",
-    gal2 : "The first set of images produced during my introduction to home development and scanning of black and white film."
+    gal2 : "Assorted unattached images from experimentation of home developed black and white film in bulk rolling and intentional light leaks, development times and methods, and subjects or styles."
 }
 
 const galleryTitlesFR = {
     gal1 : "Scènes de La Manche",
-    gal2 : "Expérimentations en photographie N&B // 2024"
+    gal2 : "Expérimentations en photographie N&B"
 }
 
 const galleryParagraphsFR = {
     gal1 : "Une série de photographes prises dans le parc national de La Manche à Terre-Neuve.",
-    gal2 : "Les premières images réalisées lors de mon initiation au développement et numérisation maison de films noir et blanc."
+    gal2 : "Images diverses non liées issues d'expérimentations avec des films noir et blanc développés à la maison, en des fuites de lumière intentionnelles, des temps et methodes de développement et des sujets ou styles variés."
 }
 
 const dictFR = {
