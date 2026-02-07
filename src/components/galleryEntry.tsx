@@ -1,12 +1,16 @@
 import { useState } from "react";
+import { useParams } from "react-router";
 
 type EntryProps = {
   images: string[];
   title: string;
-  paragraph: string
+  paragraph: string;
+  link: string
 };
 
-export const GalleryEntry = ({ images, title, paragraph }: EntryProps) => {
+export const GalleryEntry = ({ images, title, paragraph, link }: EntryProps) => {
+
+    const lang = useParams().lang
 
     const imagesTrunc = images.length <= 6 ? images : images.slice(0,6)
 
@@ -18,10 +22,8 @@ export const GalleryEntry = ({ images, title, paragraph }: EntryProps) => {
     const next = () =>
     setIndex((i) => (i === imagesTrunc.length - 1 ? 0 : i + 1));
 
-  
-
     return (
-    <div className="relative w-full max-w-lg overflow-hidden rounded-lg drop-shadow-lg drop-shadow-footer-background">
+    <a className="relative w-19/20 hover:w-full max-w-lg overflow-hidden rounded-lg drop-shadow-lg drop-shadow-footer-background block" href={"/#/"+lang+"/gallery/"+link}>
       {/* Image */}
       <img
         src={imagesTrunc[index]}
@@ -60,7 +62,9 @@ export const GalleryEntry = ({ images, title, paragraph }: EntryProps) => {
           />
         ))}
       </div>
-      <div className="bg-background-bottom min-h-60 text-text p-5">
+
+      {/* Title & description */}
+      <div className="bg-background-bottom min-h-60 h-full text-text p-5">
         <h1 className="mb-4 text-xl font-medium">
             {title}
         </h1>
@@ -69,7 +73,7 @@ export const GalleryEntry = ({ images, title, paragraph }: EntryProps) => {
             {paragraph}
         </p>
       </div>
-    </div>
+    </a>
   );
 }
 

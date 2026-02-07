@@ -32,9 +32,14 @@ const dictEN = {
     title : "Image Gallery"
 }
 
+const pages : string[] = [
+    "gallery1",
+    "gallery2"
+]
+
 export const Gallery = () => {
 
-    const lang = useParams().lang;
+    const {lang} = useParams<{ lang: string}>();
     const galleryTitles = lang === "fr" ? galleryTitlesFR : galleryTitlesEN;
     const galleryParagraphs = lang === "fr" ? galleryParagraphsFR : galleryParagraphsEN;
     const dict = lang === "fr" ? dictFR : dictEN
@@ -50,24 +55,26 @@ export const Gallery = () => {
                                 {dict.title}
                             </h2>
                         </div>
-                    <div className="mx-auto px-6">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-10 py-10 animate-fade-in-2">
-                            <div>
-                                <GalleryEntry
-                                    images={Gal1Images}
-                                    title={galleryTitles.gal1}
-                                    paragraph={galleryParagraphs.gal1}
-                                />
-                            </div>
-                            <div>
-                                <GalleryEntry
-                                    images={Gal2Images}
-                                    title={galleryTitles.gal2}
-                                    paragraph={galleryParagraphs.gal2}
-                                />
+                        <div className="mx-auto px-6">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-10 py-10 animate-fade-in-2 content-center">
+                                <div className="flex justify-center">
+                                    <GalleryEntry
+                                        images={Gal1Images}
+                                        title={galleryTitles.gal1}
+                                        paragraph={galleryParagraphs.gal1}
+                                        link={pages[0]}
+                                    />
+                                </div>
+                                <div className="flex justify-center">
+                                    <GalleryEntry
+                                        images={Gal2Images}
+                                        title={galleryTitles.gal2}
+                                        paragraph={galleryParagraphs.gal2}
+                                        link={pages[1]}
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </section>
             </section>
     </article>
