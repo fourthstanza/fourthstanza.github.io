@@ -23,7 +23,7 @@ export const GalleryEntry = ({ images, title, paragraph, link }: EntryProps) => 
     setIndex((i) => (i === imagesTrunc.length - 1 ? 0 : i + 1));
 
     return (
-    <a className="relative w-19/20 hover:w-full max-w-lg overflow-hidden rounded-lg drop-shadow-lg drop-shadow-footer-background block" href={"/#/"+lang+"/gallery/"+link}>
+    <div className="relative w-19/20 hover:w-full max-w-lg overflow-hidden rounded-lg drop-shadow-lg drop-shadow-footer-background">
       {/* Image */}
       <img
         src={imagesTrunc[index]}
@@ -64,7 +64,7 @@ export const GalleryEntry = ({ images, title, paragraph, link }: EntryProps) => 
       </div>
 
       {/* Title & description */}
-      <div className="bg-background-bottom min-h-60 h-full text-text p-5">
+      <a className="bg-background-bottom min-h-60 h-full text-text p-5 block" href={"/#/"+lang+"/gallery/"+link}>
         <h1 className="mb-4 text-xl font-medium">
             {title}
         </h1>
@@ -72,8 +72,8 @@ export const GalleryEntry = ({ images, title, paragraph, link }: EntryProps) => 
         <p className="mb-4 font-medium">
             {paragraph}
         </p>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 }
 
