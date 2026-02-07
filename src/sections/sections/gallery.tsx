@@ -57,7 +57,7 @@ export const Gallery = () => {
                         </div>
                         <div className="mx-auto px-6">
                             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-10 py-10 animate-fade-in-2 content-center">
-                                <div className="flex justify-center">
+                                <div className="flex justify-center items-start">
                                     <GalleryEntry
                                         images={Gal1Images}
                                         title={galleryTitles.gal1}
@@ -65,7 +65,7 @@ export const Gallery = () => {
                                         link={pages[0]}
                                     />
                                 </div>
-                                <div className="flex justify-center">
+                                <div className="flex justify-center items-start min-h-190">
                                     <GalleryEntry
                                         images={Gal2Images}
                                         title={galleryTitles.gal2}

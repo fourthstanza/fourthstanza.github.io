@@ -64,7 +64,7 @@ export const GalleryEntry = ({ images, title, paragraph, link }: EntryProps) => 
       </div>
 
       {/* Title & description */}
-      <a className="bg-background-bottom min-h-60 h-full text-text p-5 block" href={"/#/"+lang+"/gallery/"+link}>
+      <a className="bg-background-bottom min-h-60 text-text p-5 block" href={"/#/"+lang+"/gallery/"+link}>
         <h1 className="mb-4 text-xl font-medium">
             {title}
         </h1>
