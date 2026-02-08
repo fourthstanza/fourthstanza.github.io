@@ -30,7 +30,7 @@ const galleryParagraphsFR : string[] = [
 ]
 
 const dictFR = {
-    title : "Gallerie d'Images"
+    title : "Galerie d'Images"
 }
 
 const dictEN = {
