@@ -4,25 +4,30 @@ import { GalleryEntry } from "../../components/galleryEntry";
 import { Gal1Images } from "../Galleries/gal1Images";
 import { Gal2Images } from "../Galleries/gal2images";
 
-const galleryTitlesEN = {
-    gal1 : "Scenes from La Manche",
-    gal2 : "Experiments in B&W Photography"
-}
+const images : string[][] = [
+    Gal1Images,
+    Gal2Images
+]
 
-const galleryParagraphsEN = {
-    gal1 : "A series of photographs taken from La Manche national park in Newfoundland.",
-    gal2 : "Assorted unattached images from experimentation of home developed black and white film in bulk rolling and intentional light leaks, development times and methods, and subjects or styles."
-}
+const galleryTitlesEN : string[] = [
+    "Scenes from La Manche",
+    "Experiments in B&W Photography"
+]
 
-const galleryTitlesFR = {
-    gal1 : "Scènes de La Manche",
-    gal2 : "Expérimentations en photographie N&B"
-}
+const galleryParagraphsEN  : string[] = [
+    "A series of photographs taken from La Manche national park in Newfoundland.",
+    "Assorted unattached images from experimentation of home developed black and white film in bulk rolling and intentional light leaks, development times and methods, and subjects or styles."
+]
 
-const galleryParagraphsFR = {
-    gal1 : "Une série de photographes prises dans le parc national de La Manche à Terre-Neuve.",
-    gal2 : "Images diverses non liées issues d'expérimentations avec des films noir et blanc développés à la maison, en des fuites de lumière intentionnelles, des temps et methodes de développement et des sujets ou styles variés."
-}
+const galleryTitlesFR : string[] = [
+    "Scènes de La Manche",
+    "Expérimentations en photographie N&B"
+]
+
+const galleryParagraphsFR : string[] = [
+    "Une série de photographes prises dans le parc national de La Manche à Terre-Neuve.",
+    "Images diverses non liées issues d'expérimentations avec des films noir et blanc développés à la maison, en des fuites de lumière intentionnelles, des temps et methodes de développement et des sujets ou styles variés."
+]
 
 const dictFR = {
     title : "Gallerie d'Images"
@@ -44,6 +49,12 @@ export const Gallery = () => {
     const galleryParagraphs = lang === "fr" ? galleryParagraphsFR : galleryParagraphsEN;
     const dict = lang === "fr" ? dictFR : dictEN
 
+    const len = images.length;
+    const range = [];
+    for (let i=0; i < len; i++) {
+        range.push(i)
+    }
+
     return (
     <article className="h-auto relative min-h-screen">
         {/*background image*/}
@@ -57,22 +68,16 @@ export const Gallery = () => {
                         </div>
                         <div className="mx-auto px-6">
                             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-10 py-10 animate-fade-in-2 content-center">
-                                <div className="flex justify-center items-start">
+                                {Array.from({length:len}).map((_, i) => (
+                                    <div className="flex justify-center items-start min-h-190">
                                     <GalleryEntry
-                                        images={Gal1Images}
-                                        title={galleryTitles.gal1}
-                                        paragraph={galleryParagraphs.gal1}
-                                        link={pages[0]}
+                                        images={images[i]}
+                                        title={galleryTitles[i]}
+                                        paragraph={galleryParagraphs[i]}
+                                        link={pages[i]}
                                     />
-                                </div>
-                                <div className="flex justify-center items-start min-h-190">
-                                    <GalleryEntry
-                                        images={Gal2Images}
-                                        title={galleryTitles.gal2}
-                                        paragraph={galleryParagraphs.gal2}
-                                        link={pages[1]}
-                                    />
-                                </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                 </section>
