@@ -36,13 +36,17 @@ const galleryParagraphsEN  : string[] = [
 const galleryTitlesFR : string[] = [
     "Scènes de Terre-Neuve",
     "Expérimentations en photographie N&B",
-    "La campagne dans les Cantons-de-l'Est"
+    "La campagne dans les Cantons-de-l'Est",
+    "Urbain dans les Cantons-de-l'Est",
+    "Liminal"
 ]
 
 const galleryParagraphsFR : string[] = [
     "Une série de photographes prises pendant un voyage aux provinces de l'est de Canada.",
     "Images diverses non liées issues d'expérimentations avec des films noir et blanc développés à la maison, en des fuites de lumière intentionnelles, des temps et methodes de développement et des sujets ou styles variés.",
-    "Un projet en cours visant à documenter l'environnement que j'ai occupé pendant les deux premières décennies de ma vie, la périphérie des villes et des villages du sud du Québec."
+    "Une partie d'un projet en cours visant à documenter l'environnement que j'ai occupé pendant les deux premières décennies de ma vie, la périphérie des villes et des villages du sud du Québec.",
+    "Une partie d'un projet en cours visant à documenter l'environnement que j'ai occupé pendant les deux premières décennies de ma vie, la périphérie des villes et des villages du sud du Québec.",
+    "Des espaces qui sont vides, inquiétants, et etranges."
 ]
 
 const pages : string[] = [
