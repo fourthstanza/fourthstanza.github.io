@@ -1,4 +1,4 @@
-import { Gal4Images } from "./gal4images"
+import { Gal4Images } from "./gal4Images"
 import { useState } from "react"
 import { ImageHighlight } from "../../components/imageHighlight";
 

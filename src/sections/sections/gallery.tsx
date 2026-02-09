@@ -3,7 +3,7 @@ import { GalleryEntry } from "../../components/galleryEntry";
 import { Gal1Images } from "../Galleries/gal1Images";
 import { Gal2Images } from "../Galleries/gal2images";
 import { Gal3Images } from "../Galleries/gal3Images";
-import { Gal4Images } from "../Galleries/gal4images";
+import { Gal4Images } from "../Galleries/gal4Images";
 import { Gal5Images } from "../Galleries/gal5Images";
 
 const images : string[][] = [
