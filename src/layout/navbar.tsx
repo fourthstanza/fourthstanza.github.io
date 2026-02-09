@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, Square } from "lucide-react";
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logo_3.png";
 import { Button } from "../components/button";
 import { useLocation, useNavigate } from "react-router";
 import { useParams } from "react-router"
