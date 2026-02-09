@@ -7,10 +7,12 @@ import { Contact } from "../sections/sections/contact";
 import { NotFound } from "../sections/sections/notFound";
 import { GalleryPages } from "../sections/sections/galleryPages";
 import { ProjectPages } from "../sections/sections/projectPages";
+import ScrollToTop from "../components/scrollToTop.tsx"
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<About />} />
