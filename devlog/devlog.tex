@@ -99,5 +99,21 @@ Emails handled using email.js.\\
 installed through npm with npm i @emailjs/browser.\\
 Configured by adding keys to .env /(not pushed to the github repo/) which are imported and used when calling emailjs to send the email. Sends an email to my address using the template defined in the emailjs web interface and specified with an env variable.\\
 
+\section{Maintenance}
+
+\subsection{Adding images to existing gallery}
+
+Find the gallery folder corresponding to the correct gallery in @/src/assets/images/. Place the images in the folder and resize them to be a few hundred kb. Imports are handled automatically by the corresponding galImages component.
+
+\subsection {Adding a new gallery}
+
+To add a new gallery, do the following:
+
+\begin{enumerate}
+    \item Add a new gallery folder to the @/src/assets/images/ folder, and populate.
+    \item Add a new galImages component in @/src/sections/Galleries, and copy over the code, while changing relevant sections.
+    \item Add a new gallery component in @/src/sections/Galleries, and copy over the code, while changing relevant sections.
+    \item In @/src/sections/gallery.tsx, \begin{itemize} \item Add the new GalImages component to the images array \item Add new english and french titles to the galleryTitles arrays \item Add new english and french paragraphs tohe galleryParagraphs arrays \item add the new gallery to the pages array \end{itemize}
+\end{enumerate}
 
 \end{document}
