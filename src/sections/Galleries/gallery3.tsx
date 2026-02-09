@@ -17,7 +17,7 @@ export const Gallery3 = () => {
                 <div className="columns-1 lg:columns-2 xl:columns-3 justify-center gap-10 py-10 animate-fade-in-2 content-center">
                     {Array.from({length:len}).map((_, i) => (
                         <div className="py-5 max-w-xl">
-                            <img src={Gal3Images[i]} onClick={() => setActiveImage(Gal3Images[i])} className="rounded-md"></img>
+                            <img src={Gal3Images[i]} onClick={() => setActiveImage(Gal3Images[i])} className="rounded-md cursor-pointer"></img>
                         </div>
                     ))}
                 </div>

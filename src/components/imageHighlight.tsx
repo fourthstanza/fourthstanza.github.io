@@ -22,7 +22,7 @@ export const ImageHighlight = ({src, onClose} : highlightProps) => {
                 />
                 <button
                     onClick={onClose}
-                    className="absolute top-0 right-0 z-40 text-white bg-black/60 rounded-full p-1 hover:bg-black/80 m-5"
+                    className="absolute top-0 right-0 z-40 text-white bg-black/60 rounded-full p-1 hover:bg-black/80 m-5 cursor-pointer"
                 >
                     <X />
                 </button>

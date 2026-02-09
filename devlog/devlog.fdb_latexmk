@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1770601292.68664 "c:/Users/Fourt/Desktop/Projects/React_App/github_page/fourthstanza.github.io/devlog/devlog.tex" "devlog.pdf" "devlog" 1770601293.15425 0
+["pdflatex"] 1770603004.70466 "c:/Users/Fourt/Desktop/Projects/React_App/github_page/fourthstanza.github.io/devlog/devlog.tex" "devlog.pdf" "devlog" 1770603005.2253 0
   "C:/Users/Fourt/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1769215274 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Fourt/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1769214751 11548 dcf3ac49084d19c2c4260e2721bfa4a1 ""
   "C:/Users/Fourt/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1769463425 13333487 2a2f672188d5cedd5715f169ba6e469f ""
@@ -53,10 +53,10 @@
   "C:/Users/Fourt/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Fourt/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/Fourt/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/Fourt/Desktop/Projects/React_App/github_page/fourthstanza.github.io/devlog/devlog.tex" 1770601292 5760 a638dcd03397faf7b5071024c4578063 ""
-  "devlog.aux" 1770601293 1888 1aa294c80ee4092878fad3de8a8b238c "pdflatex"
-  "devlog.out" 1770601293 1715 9f1d3dbc645860ca535088d9c7b0d1f0 "pdflatex"
-  "devlog.tex" 1770601292 5760 a638dcd03397faf7b5071024c4578063 ""
+  "c:/Users/Fourt/Desktop/Projects/React_App/github_page/fourthstanza.github.io/devlog/devlog.tex" 1770603004 5923 dde4d8e1570abbac30475ab3eea5f9ac ""
+  "devlog.aux" 1770603005 1888 1aa294c80ee4092878fad3de8a8b238c "pdflatex"
+  "devlog.out" 1770603005 1715 9f1d3dbc645860ca535088d9c7b0d1f0 "pdflatex"
+  "devlog.tex" 1770603004 5923 dde4d8e1570abbac30475ab3eea5f9ac ""
   (generated)
   "devlog.aux"
   "devlog.log"

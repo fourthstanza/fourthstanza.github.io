@@ -1,10 +1,10 @@
-import { Gal2Images } from "./gal2Images"
+import { Gal4Images } from "./gal4Images"
 import { useState } from "react"
 import { ImageHighlight } from "../../components/imageHighlight";
 
-const len = Gal2Images.length;
+const len = Gal4Images.length;
 
-export const Gallery2 = () => {
+export const Gallery4 = () => {
 
     const [activeImage, setActiveImage] = useState<string | null>(null);
 
@@ -17,7 +17,7 @@ export const Gallery2 = () => {
                 <div className="columns-1 lg:columns-2 xl:columns-3 justify-center gap-10 py-10 animate-fade-in-2 content-center">
                     {Array.from({length:len}).map((_, i) => (
                         <div className="py-5 max-w-xl">
-                            <img src={Gal2Images[i]} onClick={() => setActiveImage(Gal2Images[i])} className="rounded-md cursor-pointer"></img>
+                            <img src={Gal4Images[i]} onClick={() => setActiveImage(Gal4Images[i])} className="rounded-md cursor-pointer"></img>
                         </div>
                     ))}
                 </div>

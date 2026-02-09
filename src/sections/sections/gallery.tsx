@@ -1,25 +1,36 @@
 import { useParams } from "react-router"
 import { GalleryEntry } from "../../components/galleryEntry";
 import { Gal1Images } from "../Galleries/gal1Images";
-import { Gal2Images } from "../Galleries/gal2images";
+import { Gal2Images } from "../Galleries/gal2Images";
 import { Gal3Images } from "../Galleries/gal3Images";
+import { Gal4Images } from "../Galleries/gal4Images";
+import { Gal5Images } from "../Galleries/gal5Images";
 
 const images : string[][] = [
     Gal1Images,
     Gal2Images,
-    Gal3Images
+    Gal3Images,
+    Gal4Images,
+    Gal5Images,
+
 ]
 
 const galleryTitlesEN : string[] = [
-    "Scenes from Newfoundland",
+    "Scenes from Eastern Canada",
     "Experiments in B&W Photography",
-    "Rural in the Eastern Townships"
+    "Rural in the Eastern Townships",
+    "Urban in the Eastern Townships",
+    "Liminal"
 ]
 
 const galleryParagraphsEN  : string[] = [
-    "A series of photographs taken from St John's, and La Manche and Gros Morne national parks in Newfoundland.",
+    "A series of photographs taken during a trip though the eastern provinces of Canada.",
     "Assorted unattached images from experimentation of home developed black and white film in bulk rolling and intentional light leaks, development times and methods, and subjects or styles.",
-    "An ongoing project to document the environment that I occupied for the first couple decades of my life, the outskirts of the towns and villages in southern Quebec."
+    "Part of an ongoing project to document the environment that I occupied for the first couple decades of my life, the outskirts of the towns and villages in southern Quebec.",
+    "Part of an ongoing project to document the environment that I occupied for the first couple decades of my life, the outskirts of the towns and villages in southern Quebec.",
+    "Spaces that are empty, uncanny, and strange."
+
+
 ]
 
 const galleryTitlesFR : string[] = [
@@ -29,9 +40,17 @@ const galleryTitlesFR : string[] = [
 ]
 
 const galleryParagraphsFR : string[] = [
-    "Une série de photographes prises dans le parc national de La Manche, Gros Morne, et St. John's à Terre-Neuve.",
+    "Une série de photographes prises pendant un voyage aux provinces de l'est de Canada.",
     "Images diverses non liées issues d'expérimentations avec des films noir et blanc développés à la maison, en des fuites de lumière intentionnelles, des temps et methodes de développement et des sujets ou styles variés.",
     "Un projet en cours visant à documenter l'environnement que j'ai occupé pendant les deux premières décennies de ma vie, la périphérie des villes et des villages du sud du Québec."
+]
+
+const pages : string[] = [
+    "gallery1",
+    "gallery2",
+    "gallery3",
+    "gallery4",
+    "gallery5"
 ]
 
 const dictFR = {
@@ -41,12 +60,6 @@ const dictFR = {
 const dictEN = {
     title : "Image Gallery"
 }
-
-const pages : string[] = [
-    "gallery1",
-    "gallery2",
-    "gallery3"
-]
 
 export const Gallery = () => {
 
