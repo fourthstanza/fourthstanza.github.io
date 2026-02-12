@@ -5,6 +5,7 @@ import { Gal2Images } from "../Galleries/gal2images";
 import { Gal3Images } from "../Galleries/gal3Images";
 import { Gal4Images } from "../Galleries/gal4Images";
 import { Gal5Images } from "../Galleries/gal5Images";
+import { Gal6Images } from "../Galleries/gal6Images";
 
 const images : string[][] = [
     Gal1Images,
@@ -12,7 +13,7 @@ const images : string[][] = [
     Gal3Images,
     Gal4Images,
     Gal5Images,
-
+    Gal6Images
 ]
 
 const galleryTitlesEN : string[] = [
@@ -20,7 +21,8 @@ const galleryTitlesEN : string[] = [
     "Experiments in B&W Photography",
     "Rural in the Eastern Townships",
     "Urban in the Eastern Townships",
-    "Liminal"
+    "Liminal",
+    "Nishika N8000"
 ]
 
 const galleryParagraphsEN  : string[] = [
@@ -28,7 +30,8 @@ const galleryParagraphsEN  : string[] = [
     "Assorted unattached images from experimentation of home developed black and white film in bulk rolling and intentional light leaks, development times and methods, and subjects or styles.",
     "Part of an ongoing project to document the environment that I occupied for the first couple decades of my life, the outskirts of the towns and villages in southern Quebec.",
     "Part of an ongoing project to document the environment that I occupied for the first couple decades of my life, the outskirts of the towns and villages in southern Quebec.",
-    "Spaces that are empty, uncanny, and strange."
+    "Spaces that are empty, uncanny, and strange.",
+    "GIF's made using the N8000 compound camera system, a device initially designed for making holographic prints."
 
 
 ]
@@ -38,7 +41,8 @@ const galleryTitlesFR : string[] = [
     "Expérimentations en photographie N&B",
     "La campagne dans les Cantons-de-l'Est",
     "Urbain dans les Cantons-de-l'Est",
-    "Liminal"
+    "Liminal",
+    "Nishika N8000"
 ]
 
 const galleryParagraphsFR : string[] = [
@@ -46,7 +50,8 @@ const galleryParagraphsFR : string[] = [
     "Images diverses non liées issues d'expérimentations avec des films noir et blanc développés à la maison, en des fuites de lumière intentionnelles, des temps et methodes de développement et des sujets ou styles variés.",
     "Une partie d'un projet en cours visant à documenter l'environnement que j'ai occupé pendant les deux premières décennies de ma vie, la périphérie des villes et des villages du sud du Québec.",
     "Une partie d'un projet en cours visant à documenter l'environnement que j'ai occupé pendant les deux premières décennies de ma vie, la périphérie des villes et des villages du sud du Québec.",
-    "Des espaces qui sont vides, inquiétants, et etranges."
+    "Des espaces qui sont vides, inquiétants, et etranges.",
+    "Des GIF's réalisé à l'aide du système de caméra composite N8000, un appareil initialement conçu pour la réalisation d'impressions holographiques."
 ]
 
 const pages : string[] = [
@@ -54,7 +59,8 @@ const pages : string[] = [
     "gallery2",
     "gallery3",
     "gallery4",
-    "gallery5"
+    "gallery5",
+    "gallery6"
 ]
 
 const dictFR = {
