@@ -6,6 +6,8 @@ import { Gal3Images } from "../Galleries/gal3Images";
 import { Gal4Images } from "../Galleries/gal4Images";
 import { Gal5Images } from "../Galleries/gal5Images";
 import { Gal6Images } from "../Galleries/gal6Images";
+import { Gal7Images } from "../Galleries/gal7Images";
+import { Gal8Images } from "../Galleries/gal8Images"
 
 const images : string[][] = [
     Gal1Images,
@@ -13,7 +15,9 @@ const images : string[][] = [
     Gal3Images,
     Gal4Images,
     Gal5Images,
-    Gal6Images
+    Gal6Images,
+    Gal7Images,
+    Gal8Images
 ]
 
 const galleryTitlesEN : string[] = [
@@ -22,7 +26,9 @@ const galleryTitlesEN : string[] = [
     "Rural in the Eastern Townships",
     "Urban in the Eastern Townships",
     "Liminal",
-    "Nishika N8000"
+    "Nishika N8000",
+    "Portraiture",
+    "Expired"
 ]
 
 const galleryParagraphsEN  : string[] = [
@@ -31,9 +37,9 @@ const galleryParagraphsEN  : string[] = [
     "Part of an ongoing project to document the environment that I occupied for the first couple decades of my life, the outskirts of the towns and villages in southern Quebec.",
     "Part of an ongoing project to document the environment that I occupied for the first couple decades of my life, the outskirts of the towns and villages in southern Quebec.",
     "Spaces that are empty, uncanny, and strange.",
-    "GIF's made using the N8000 compound camera system, a device initially designed for making holographic prints."
-
-
+    "GIF's made using the N8000 compound camera system, a device initially designed for making holographic prints.",
+    "Samples of portraiture work that I've done, both professional and personal.",
+    "Pictures taken with expired and discarded film."
 ]
 
 const galleryTitlesFR : string[] = [
@@ -42,7 +48,9 @@ const galleryTitlesFR : string[] = [
     "La campagne dans les Cantons-de-l'Est",
     "Urbain dans les Cantons-de-l'Est",
     "Liminal",
-    "Nishika N8000"
+    "Nishika N8000",
+    "Portrait",
+    "Expiré"
 ]
 
 const galleryParagraphsFR : string[] = [
@@ -51,7 +59,9 @@ const galleryParagraphsFR : string[] = [
     "Une partie d'un projet en cours visant à documenter l'environnement que j'ai occupé pendant les deux premières décennies de ma vie, la périphérie des villes et des villages du sud du Québec.",
     "Une partie d'un projet en cours visant à documenter l'environnement que j'ai occupé pendant les deux premières décennies de ma vie, la périphérie des villes et des villages du sud du Québec.",
     "Des espaces qui sont vides, inquiétants, et etranges.",
-    "Des GIF's réalisé à l'aide du système de caméra composite N8000, un appareil initialement conçu pour la réalisation d'impressions holographiques."
+    "Des GIF's réalisé à l'aide du système de caméra composite N8000, un appareil initialement conçu pour la réalisation d'impressions holographiques.",
+    "Examples de portraits que j'ai réalisés, à titre professionnel et personnel.",
+    "Photos prises avec des pellicules expirés et jetées."
 ]
 
 const pages : string[] = [
@@ -60,7 +70,9 @@ const pages : string[] = [
     "gallery3",
     "gallery4",
     "gallery5",
-    "gallery6"
+    "gallery6",
+    "gallery7",
+    "gallery8"
 ]
 
 const dictFR = {

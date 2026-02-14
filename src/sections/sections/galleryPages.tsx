@@ -5,6 +5,8 @@ import { Gallery3 } from "../Galleries/gallery3.tsx"
 import { Gallery4 } from "../Galleries/gallery4.tsx"
 import { Gallery5 } from "../Galleries/gallery5.tsx"
 import { Gallery6 } from "../Galleries/gallery6.tsx"
+import { Gallery7 } from "../Galleries/gallery7.tsx"
+import { Gallery8 } from "../Galleries/gallery8.tsx"
 import { NotFound } from "./notFound.tsx"
 
 export function GalleryPages() {
@@ -16,7 +18,9 @@ export function GalleryPages() {
     gallery3 : <Gallery3 />,
     gallery4 : <Gallery4 />,
     gallery5 : <Gallery5 />,
-    gallery6 : <Gallery6 />
+    gallery6 : <Gallery6 />,
+    gallery7 : <Gallery7 />,
+    gallery8 : <Gallery8 />
   }
 
   const page = id && id in pages ? pages[id] : <NotFound />
