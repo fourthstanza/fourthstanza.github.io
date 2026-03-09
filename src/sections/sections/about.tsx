@@ -4,14 +4,14 @@ import { useParams } from "react-router"
 const dictEN = {
     title: "Welcome to my page.",
     p1: "Hello! My name's Matthew. I'm a passionate new research assistant/software engineer with a background in astrophysics and computer science. I specialize in modelling dynamical systems and the practical application of machine learning. I'm a strong advocate for doing things yourself and continuously learning new skills.",
-    p2: "When I'm not immersed in research, I enjoy exploring photography and tinkering with electronics as creative outlets. You'll find here a showcase of my projects and research, as well as a gallery of images related to my work and artistic interests.",
+    p2: "In my free time, I enjoy exploring photography and tinkering with electronics as creative outlets. You'll find here a showcase of my projects and research, as well as a gallery of images related to my work and artistic interests.",
     title2: "What I've been listening to"
 }
 
 const dictFR = {
     title: "Bienvenue sur ma page.",
     p1: "Bonjour! Je m'appelle Matthew. Je suis un jeune assistant de recherche/ingénieur logiciel passionné, avec une formation en astrophysique et en informatique. Je me spécialise dans la modélisation des systèmes dynamiques et l'application pratique de l'apprentissage automatique. Je crois fermement à l'importance de faire les choses soi-même et d'apprendre continuellement de nouvelles compétences.",
-    p2: "Lorsque je ne suis pas plongé dans la recherche, j'aime explorer la photographie et bricoler avec des projets électroniques comme moyens d'expression créative. Vous trouverez ici une présentation de mes projets et de mes travaux, ainsi qu'une galerie d'images en lien avec mon travail et avec mes intérêts artistiques.",
+    p2: "Dans mon temps libre, j'aime explorer la photographie et bricoler avec des projets électroniques comme moyens d'expression créative. Vous trouverez ici une présentation de mes projets et de mes travaux, ainsi qu'une galerie d'images en lien avec mon travail et avec mes intérêts artistiques.",
     title2: "Ce que j'écoute en ce moment"
 }
 
