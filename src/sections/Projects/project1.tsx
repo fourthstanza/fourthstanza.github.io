@@ -4,13 +4,13 @@ import { ImageHighlight } from "../../components/imageHighlight";
 import { useParams } from "react-router";
 
 const dictEN = {
-    title: "Learn how to code your own orbit simulations; no black boxes involved.",
-    p1: "This Jupyter notebook was created to teach undergraduate students how to simulate physical systems from scratch. It covers topics such as numerical integration, the n-body problem, and hybrid integrators. The notebook is designed to be accessible to beginners, and I provide detailed explanations of the code and the underlying physics concepts. Working through this notebook should help guide your understanding of how to simulate physical systems."
+    title: "Learn to code your own orbit simulations.",
+    p1: "This Jupyter notebook is a piece of educational material I created to teach undergraduate students the basics of simulating physical systems from scratch."
 }
 
 const dictFR = {
-    title: "Apprenez à programmez vos propres simulations d'orbites; aucune boîte noire impliquée.",
-    p1: "Ce cahier Jupyter a été créé pour enseigner aux étudiants de premier cycle comment simuler des systèmes physiques à partir de zéro. Il couvre des sujets tels que l'intégration numérique, le problème à n corps et les intégrateurs hybrides. Le cahier est conçu pour être accessible aux débutants, et je fournis des explications détaillées du code et des concepts physiques sous-jacents. Travailler sur ce cahier devrait vous aider à comprendre comment simuler des systèmes physiques."
+    title: "Apprenez à programmez vos propres simulations d'orbites.",
+    p1: "Ce cahier Jupyter est un matériel pédagogique que j'ai créé pour enseigner aux étudiants de premier cycle les bases de la simulation de systèmes physiques à partir de zéro."
 }
 
 export const Project1 = () => {

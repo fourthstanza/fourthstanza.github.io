@@ -28,7 +28,7 @@ export const ProjectEntry = ({ images, title, paragraph, link }: EntryProps) => 
       <img
         src={imagesTrunc[index]}
         alt=""
-        className=" w-full object-cover"
+        className=" w-full object-cover aspect-video"
       />
 
       {/* Left button */}

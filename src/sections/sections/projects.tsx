@@ -26,15 +26,15 @@ const pages : string[] = [
     "project1",
 ]
 
-const dictFR = {
-    title : "Vitrine de Projets",
-    subtitle: "Voici une sélection de mes projets. Cliquez pour voir plus de détails et d'images de chacun d'eux."
-}
+//const dictFR = {
+//    title : "Vitrine de Projets",
+//    subtitle: "Voici une sélection de mes projets. Cliquez pour voir plus de détails et d'images de chacun d'eux."
+//}
 
-const dictEN = {
-    title : "Project Showcase",
-    subtitle: "See here a selection of my projects. Click through to see more details and images from each one."
-}
+//const dictEN = {
+//    title : "Project Showcase",
+//    subtitle: "See here a selection of my projects. Click through to see more details and images from each one."
+//}
 
 
 export const Projects = () => {
@@ -42,7 +42,7 @@ export const Projects = () => {
     const {lang} = useParams<{ lang: string}>();
     const projectTitles = lang === "fr" ? projectTitlesFR : projectTitlesEN;
     const projectParagraphs = lang === "fr" ? projectParagraphsFR : projectParagraphsEN;
-    const dict = lang === "fr" ? dictFR : dictEN
+    {/*const dict = lang === "fr" ? dictFR : dictEN*/} //dict is currently unused but will be used when the text content of the page is added
 
     const len = images.length;
 
@@ -53,14 +53,14 @@ export const Projects = () => {
                 <section className="items-center overflow-hidden py-30 flex justify-center">
                         <section className="items-center overflow-hidden px-3">
                             <div className="md:px-4 mt-10 animate-fade-in flex justify-center">
-                                <h2 className="text-4xl font-bold mb-4 text-text">
+                                {/*<h2 className="text-4xl font-bold mb-4 text-text">
                                     {dict.title}
-                                </h2>
+                                </h2>*/}
                             </div>
                             <div className="md:px-4 mb-10 animate-fade-in-2 flex justify-center text-center">
-                                <h3>
+                                {/*<h3>
                                     {dict.subtitle}
-                                </h3>
+                                </h3>*/}
                             </div>
                             <div className="mx-auto px-6">
                                 <div className="grid grid-cols-1 justify-center gap-10 py-10 animate-fade-in-2 content-center">
